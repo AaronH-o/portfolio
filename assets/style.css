@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   line-height: 1.3;
   margin: 0%;
+
 }
 
 header {
@@ -60,18 +61,19 @@ main {
   flex-direction: column;
   flex: 1 1 0;
   max-width: 96%;
-  margin: 2% auto;
+  margin: 2% 10%;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: baseline;
   gap: 50px;
 }
 
 .main-content h1 {
+  font-size: xx-large;
   color: black;
 }
 
@@ -81,7 +83,6 @@ main {
 
 #work {
   align-items: flex-start;
-  justify-content: space-evenly;
 }
 
 .flex-container-work {
@@ -110,6 +111,20 @@ main {
 }
 
 /* create a text box on top of the image */
+.text-block-large {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+.text-block-large h4, .text-block-large p {
+  font-size: x-large;
+}
+
 .text-block {
   position: absolute;
   bottom: 10%;
@@ -148,11 +163,11 @@ main {
 }
 
 /* styling for links */
-#contact a:link , a:visited{
+#contact a:link , #contact a:visited{
   text-decoration: none;
   color: var(--grey);
 }
-#contact a:hover , a:active {
+#contact a:hover , #contact a:active {
   text-decoration: underline;
   font-weight: bold;
   color: black;
