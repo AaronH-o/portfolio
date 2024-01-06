@@ -1,3 +1,8 @@
+:root {
+  --main: #2A3642;
+  --grey: #555555;
+}
+
 * {
   font-family: 'Merriweather Sans', sans-serif;
 }
@@ -23,7 +28,7 @@ header {
 header h1 {
   font-size: 200%;
   margin: 0;
-  color: #2A3642;
+  color: var(--main);
   text-align: center;
 }
 
@@ -41,7 +46,7 @@ nav ul {
 }
 
 nav a {
-  color: #2A3642;
+  color: var(--main);
   font-weight: bold;
   text-decoration: none;
 }
@@ -56,6 +61,55 @@ main {
   flex: 1 1 0;
   max-width: 96%;
   margin: 2% auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.main-content h1 {
+  color: black;
+}
+
+.main-content h4 {
+  color: var(--grey);
+}
+
+#work {
+  align-items: flex-start;
+}
+
+.flex-container-work {
+  flex: 4;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+/* create a text box on top of the image */
+.text-block {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.project-image {
+  display: flex;
+  flex: 0 0 40%;
+  position: relative;
+  margin: 25px;
+  border: 5px solid var(--grey);
 }
 
 .flex-container-contact {
@@ -77,11 +131,21 @@ main {
   min-width: 100px;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 50px;
+/* styling for links */
+#contact a:link , a:visited{
+  text-decoration: none;
+  color: var(--grey);
+}
+#contact a:hover , a:active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
 }
 
+@media screen and (max-width: 1100px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
