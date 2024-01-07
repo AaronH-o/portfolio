@@ -75,6 +75,7 @@ main {
 .main-content h1 {
   font-size: xx-large;
   color: black;
+  flex-basis: 18%;
 }
 
 .main-content h4 {
