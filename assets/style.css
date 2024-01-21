@@ -34,7 +34,7 @@ header h1 {
 }
 
 .banner {
-  width: 150px;
+  max-height: 80px;
   border-radius: 40%;
 }
 
@@ -164,20 +164,37 @@ main {
 }
 
 /* styling for links */
-#contact a:link , #contact a:visited{
+#contact a:link , #contact a:visited, #resume a:link, #resume a:visited {
   text-decoration: none;
   color: var(--grey);
 }
-#contact a:hover , #contact a:active {
+#contact a:hover , #contact a:active, #resume a:hover, #resume a:active {
   text-decoration: underline;
   font-weight: bold;
   color: black;
 }
 
-@media screen and (max-width: 1100px) {
-
+@media screen and (max-width: 1240px) {
+  .flex-container-work {
+    flex-direction: column;
+  }
+  .flex-container-work-small {
+    display: block;
+    margin: 0;
+  }
+  .project-image-big, .project-image {
+    width: 400px;
+    flex-shrink: 0;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 820px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .project-image-big, .project-image {
+    width: 60%;
+    flex-shrink: 1;
+  }
 }
